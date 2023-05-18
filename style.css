@@ -1,4 +1,5 @@
-body {
-  background-image: url("Bg.png");
+body  {
+  background-image: url(Bg.png);
   background-size: cover;
-}
+  filter: brightness(150%);
+  }
