@@ -1,5 +1,59 @@
 body  {
-  background-image: url(Bg.png);
-  background-size: cover;
-  filter: brightness(150%);
+  margin: 0;
   }
+
+header {
+  width: 100%;
+  height: 100px;
+  background: #ff0000 no-repeat top left/5px 5px;
+  animation: secbg 5s infinite;
+  text-align: center;
+  color: hotpink;
+  font-family: 'Roboto Slab', serif;
+  font-size: 3em;
+  padding-top: 20px;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  background: #ff0000 no-repeat top left/5px 5px;
+  animation: secbg 5s infinite;
+}
+
+@keyframes secbg {
+  50% {background: #ff7b00 bottom right/50px 50px;}
+}
+
+#secbg1 {
+  background-image: url(secbg1.png);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+#secbg2 {
+  background-image: url(secbg2.png);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+#secbg3 {
+  background-image: url(secbg3.png);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+}
+
+#secbg4 {
+  background-image: url(secbg4.png);
+  background-size: 100%;
+  max-width: 100%;
+  height: 500px;
+  background-attachment: fixed;
+}
