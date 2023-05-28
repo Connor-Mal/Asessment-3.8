@@ -10,19 +10,46 @@ body  {
 h1 {
   margin: auto;
   width: 60%;
-  height: 150px;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1));
+  height: 100px;
+  background-color: yellow;
   animation: banbg 5s infinite;
   text-align: center;
-  color: hotpink;
+  color: black;
   font-family: 'Roboto Slab', serif;
   font-size: 3em;
-  border-color: yellow;
+  border-color: black;
   border-style: double double none double;
+  border-radius: 10px;
+  border-width: 10px;
 }
 
 @keyframes banbg {
-  50% {background: mediumpurple bottom right/50px 50px;}
+  50% {background: darkorange bottom right/50px 50px;}
+}
+
+nav {
+  height: 120px;
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+ul{
+  background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(255,0,0,1));
+  transition-duration: 0.4s;
+  text-align: center;
+  text-shadow: 0px 0px 3px lightcoral;
+  font-size: 20px;
+  border-color: #ff4242;
+  border-radius: 20px;
+  border-style: dotted none none none;
+  border-width: thick;
+  margin: auto;
+  padding: 5px;
+}
+li{
+  display: inline;
+  font-size: 120%;
 }
 
 section {
@@ -33,9 +60,10 @@ section {
   animation: secbg 5s infinite;
 }
 
-@keyframes secbg {
+@keyframes navbdr {
   50% {background: #ff7b00 bottom right/50px 50px;}
 }
+
 
 #secbg1 {
   background-size: 100%;
