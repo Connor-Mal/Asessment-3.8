@@ -11,13 +11,16 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
   
-<body>
-  
-  
-  
+<body>  
+
+  <button onclick="topFunction()" id="topBtn" title="Go to top">Go to top</button>
   
   <div id="secbg1">
-
+    
+    <header>
+      
+    </header>
+    
     <h1>Rendonulis Mod</h1>
   
   <nav>
@@ -35,9 +38,29 @@
   <div id="secbg3"></div>
   <section></section>
   <div id="secbg4"
-  <footer></footer>
+  <footer>
+  </footer>
 
 
+
+    <script>
+   let topbutton = document.getElementById("topBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    topbutton.style.display = "block";
+  } else {
+    topbutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
 </body>
 
 </html>
