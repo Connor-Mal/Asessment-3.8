@@ -101,7 +101,7 @@ section {
 
 
 #secbg1 {
-  background-image:url(secbg1.png);
+  background-image:url(images/secbg1.png);
   background-size: 100%;
   max-width: 100%;
   height: 600px;
@@ -109,7 +109,7 @@ section {
 }
 
 #secbg2 {
-  background-image: url(secbg2.png);
+  background-image: url(images/secbg2.png);
   background-size: 100%;
   max-width: 100%;
   height: 600px;
@@ -117,7 +117,7 @@ section {
 }
 
 #secbg3 {
-  background-image: url(secbg3.png);
+  background-image: url(images/secbg3.png);
   background-size: 100%;
   max-width: 100%;
   height: 600px;
@@ -125,7 +125,7 @@ section {
 }
 
 #secbg4 {
-  background-image: url(secbg4.png);
+  background-image: url(images/secbg4.png);
   background-size: 100%;
   max-width: 100%;
   height: 600px;
