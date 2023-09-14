@@ -1,7 +1,8 @@
-body  {
-  margin: 0;
+body {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
   width: 100%;
-  height: 500px;
   background-attachment: fixed;
 }
 
@@ -25,16 +26,11 @@ h1 {
   border-width: 10px;
 }
 
-
-@keyframes banbg {
-  50% {background: #ff7b00 bottom right/50px 50px;}
-}
-
 nav {
   height: 120px;
   width: auto;
   margin: auto;
-  padding: 50px;
+  padding: 20px;
 }
 
 a{
@@ -69,19 +65,19 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-
 ul{
   background-image: linear-gradient(to top, rgba(255,69,0,0), rgba(255,69,0,1));
   transition-duration: 0.4s;
   text-align: center;
   text-shadow: 0px 0px 3px black;
   border-color: #bebebe;
-  border-radius: 20px;
+  border-radius: 40px;
   border-style: solid solid none solid;
   border-width: thick;
   margin: auto;
   padding: 10px;
 }
+
 li{
   display: inline;
   padding: 20px;
@@ -94,11 +90,6 @@ section {
   background: #ff0000 no-repeat top left/5px 5px;
   animation: secbg 5s infinite;
 }
-
-@keyframes secbg {
-  50% {background: #ff7b00 bottom right/50px 50px;}
-}
-
 
 #secbg1 {
   background-image:url(images/secbg1.png);
@@ -176,6 +167,23 @@ h2 {
   box-shadow: 0px 0px 50px yellow;
 }
 
+h3{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.9vw;
+  margin: auto;
+  width: 50%;
+  background: #ff2929;
+  padding: 20px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 100px orangered;
+  border-radius: 5px;
+  border-style: none none none solid;
+  border-width: 10px;
+  border-color: #d4d4d4;
+  color: #000000;
+  font-weight: 900;
+}
+
 p{
   font-family: 'Roboto Slab', serif;
   font-size: 1.9vw;
@@ -192,6 +200,18 @@ p{
   color: #000000;
   font-weight: 900;
 }
+
+#The-Temple{
+    width: 50%;
+  }
+
+#The-Boss{
+    width: 40%;
+  }
+
+#The-Summoned{
+    width: 60%;
+  }
 
 .waviy {
   margin: auto;
@@ -211,31 +231,97 @@ p{
   -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
 }
 
+@keyframes secbg {
+  50% {background: #ff7b00 bottom right/50px 50px;}
+}
+
+@keyframes banbg {
+  50% {background: #ff7b00 bottom right/50px 50px;}
+}
+
 .waviy span {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
-  animation: waviy 1s infinite;
+  animation: waviy 3s infinite;
   animation-delay: calc(.1s * var(--i));
 }
 
 @keyframes waviy {
-  0%,40%,100% {
+  0%,0%,0% {
     transform: translateY(0)
   }
-  20% {
+  30% {
     transform: translateY(-20px)
   }
 }
 
-#The-Temple{
-  width: 50%;
+@media screen and (max-width: 600px){
+  #secbg1 {
+  height: 250px;
+}
+  
+  #secbg2 {
+  height: 350px;
+}
+  
+  #secbg3 {
+  height: 350px;
+}
+  
+  #secbg4 {
+  height: 400px;
+}
+  
+  h2 {
+  border-radius: 3px;
+  border-width: 5px;
+  }
+  
+  ul{
+    padding: 5px;
+  }
+  
+  li{
+  padding: 5px;
+  }
+
+  p{
+    font-size: 10px;
+    padding: 10px;
+    width: 70%;
+  }
+
+  h3{
+    font-size: 10px;
+    padding: 10px;
+    width: 70%;
+    position: relative;
+    top: -50px;
+  }
+
+  nav{
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+
+  #topBtn {
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-#The-Boss{
-  width: 40%;
-}
-
-#The-Summoned{
-  width: 60%;
+  @keyframes waviy {
+  0%,0%,0% {
+    transform: translateY(0)
+  }30% 
+    {
+      transform: translateY(-5px)
+    }
+  }
+  
 }
