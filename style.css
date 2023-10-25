@@ -33,7 +33,7 @@ nav {
   padding: 20px;
 }
 
-a{
+a {
   font-family: 'Roboto Slab', serif;
   font-size: 3vw;
   margin: auto;
@@ -44,29 +44,25 @@ a{
 
 a {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0)
-    ),
-    linear-gradient(
-      to right,
+      rgba(0, 0, 0, 0)),
+    linear-gradient(to right,
       rgba(255, 0, 0, 1),
       rgba(255, 165, 0, 1),
-      rgba(255, 255, 0, 1)
-  );
+      rgba(255, 255, 0, 1));
   background-size: 100% 3px, 0 3px;
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
 
-a:hover {
+ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-ul{
-  background-image: linear-gradient(to top, rgba(255,69,0,0), rgba(255,69,0,1));
+ul {
+  background-image: linear-gradient(to top, rgba(255, 69, 0, 0), rgba(255, 69, 0, 1));
   transition-duration: 0.4s;
   text-align: center;
   text-shadow: 0px 0px 3px black;
@@ -78,7 +74,7 @@ ul{
   padding: 10px;
 }
 
-li{
+li {
   display: inline;
   padding: 20px;
 }
@@ -92,7 +88,7 @@ section {
 }
 
 #secbg1 {
-  background-image:url(images/secbg1.png);
+  background-image: url(images/secbg1.png);
   background-size: 100%;
   max-width: 100%;
   height: 600px;
@@ -150,68 +146,51 @@ section {
   background-color: #bebebe;
 }
 
-h2 {
+h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.9vw;
   margin: auto;
+  width: 50%;
+  background: #ff2929;
+  padding: 20px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 100px orangered;
+  border-radius: 5px;
+  border-style: none none none solid;
+  border-width: 10px;
+  border-color: #d4d4d4;
+  color: #000000;
+  font-weight: 900;
+}
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.9vw;
+  margin: auto;
+  width: 50%;
+  background: #ff2929;
+  padding: 20px;
+  opacity: 0.9;
+  box-shadow: 0px 0px 100px orangered;
+  border-radius: 5px;
+  border-style: none none none solid;
+  border-width: 10px;
+  border-color: #d4d4d4;
+  color: #000000;
+  font-weight: 900;
+}
+
+#The-Temple {
+  width: 50%;
+}
+
+#The-Boss {
   width: 40%;
-  height: auto;
-  text-align: center;
-  color: black;
-  font-family: 'Roboto Slab', serif;
-  font-size: 5vw;
-  opacity: 0.9;
-  background-color: darkorange;
-  border-radius: 20px;
-  border-style: groove none ridge none;
-  border-width: 10px;
-  border-color: #d10000;
-  box-shadow: 0px 0px 50px yellow;
 }
 
-h3{
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.9vw;
-  margin: auto;
-  width: 50%;
-  background: #ff2929;
-  padding: 20px;
-  opacity: 0.9;
-  box-shadow: 0px 0px 100px orangered;
-  border-radius: 5px;
-  border-style: none none none solid;
-  border-width: 10px;
-  border-color: #d4d4d4;
-  color: #000000;
-  font-weight: 900;
+#The-Summoned {
+  width: 60%;
 }
-
-p{
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.9vw;
-  margin: auto;
-  width: 50%;
-  background: #ff2929;
-  padding: 20px;
-  opacity: 0.9;
-  box-shadow: 0px 0px 100px orangered;
-  border-radius: 5px;
-  border-style: none none none solid;
-  border-width: 10px;
-  border-color: #d4d4d4;
-  color: #000000;
-  font-weight: 900;
-}
-
-#The-Temple{
-    width: 50%;
-  }
-
-#The-Boss{
-    width: 40%;
-  }
-
-#The-Summoned{
-    width: 60%;
-  }
 
 .waviy {
   margin: auto;
@@ -228,15 +207,19 @@ p{
   border-color: #d10000;
   box-shadow: 0px 0px 50px yellow;
   position: relative;
-  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
 }
 
 @keyframes secbg {
-  50% {background: #ff7b00 bottom right/50px 50px;}
+  50% {
+    background: #ff7b00 bottom right/50px 50px;
+  }
 }
 
 @keyframes banbg {
-  50% {background: #ff7b00 bottom right/50px 50px;}
+  50% {
+    background: #ff7b00 bottom right/50px 50px;
+  }
 }
 
 .waviy span {
@@ -248,80 +231,180 @@ p{
 }
 
 @keyframes waviy {
-  0%,0%,0% {
+
+  0%,
+  0%,
+  0% {
     transform: translateY(0)
   }
+
   30% {
     transform: translateY(-20px)
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (min-width: 720px) {
+  .topnav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px) {
+
   #secbg1 {
-  height: 250px;
-}
-  
-  #secbg2 {
-  height: 350px;
-}
-  
-  #secbg3 {
-  height: 350px;
-}
-  
-  #secbg4 {
-  height: 400px;
-}
-  
-  h2 {
-  border-radius: 3px;
-  border-width: 5px;
-  }
-  
-  ul{
-    padding: 5px;
-  }
-  
-  li{
-  padding: 5px;
+    height: 250px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0), rgba(255, 255, 0));
   }
 
-  p{
+  #secbg2 {
+    height: 350px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0), rgba(255, 255, 0));
+  }
+
+  #secbg3 {
+    height: 350px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0), rgba(255, 255, 0));
+  }
+
+  #secbg4 {
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0), rgba(255, 255, 0));
+  }
+
+  section {
+    display: none;
+  }
+
+  .waviy {
+    background: none;
+    border-radius: 3px;
+    border-style: none none solid none;
+    border-width: 5px;
+    border-color: #404040;
+    opacity: 1;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0));
+  }
+
+  h2 {
+    border-radius: 3px;
+    border-width: 5px;
+  }
+
+  ul {
+    border: none;
+    border-radius: 0px;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  li {
+    padding: 0px;
+  }
+
+  p {
     font-size: 10px;
     padding: 10px;
     width: 70%;
+    border-style: none;
+    background: none;
   }
 
-  h3{
+  h3 {
     font-size: 10px;
     padding: 10px;
     width: 70%;
     position: relative;
     top: -50px;
+    border-style: none;
+    background: none;
   }
 
-  nav{
-    padding: 20px;
+  nav {
+    padding: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    height: 210px;
+    border: none;
+    background: none;
   }
 
   #topBtn {
-  bottom: 10px;
-  right: 10px;
-  z-index: 99;
-  font-size: 15px;
-  padding: 10px;
-  border-radius: 20px;
-}
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 20px;
+  }
 
   @keyframes waviy {
-  0%,0%,0% {
-    transform: translateY(0)
-  }30% 
-    {
-      transform: translateY(-5px)
+
+    0%,
+    0%,
+    0% {
+      transform: translateY(0)
+    }
+
+    0% {
+      transform: translateY(0px)
     }
   }
-  
+
+  h1 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: black;
+    border-style: none;
+    border-radius: 0px;
+    background-color: none;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #3;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #000000;
+    color: #ff7100;
+  }
+
+  .active {
+    background-color: yellow;
+    color: black;
+    border-color: #404040;
+    border-style: none none double none;
+    font-size: 6vw;
+    border-width: 10px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
 }
