@@ -57,7 +57,7 @@ a {
   transition: background-size 400ms;
 }
 
- a:hover {
+a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
@@ -382,22 +382,26 @@ p {
   }
 
   .topnav a.icon {
-    background: black;
+    background-image: url(images/menu.png);
+    background-size: 120%;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 10;
   }
 
   .topnav a:hover {
-    background-color: #000000;
+    background-color: black;
     color: #ff7100;
   }
 
   .active {
     background-color: yellow;
     color: black;
-    border-color: #404040;
+    border-color: black;
     border-style: none none double none;
     font-size: 6vw;
     border-width: 10px;
